@@ -6,4 +6,5 @@
      from the callback will be saved as a key on the object.
       The value associated with each key will be the number of
        times that particular return value was returned.
+       new one
 */
