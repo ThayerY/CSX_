@@ -8,3 +8,22 @@
        times that particular return value was returned.
        new one
 */
+
+// ADD CODE HERE
+function countBy(array, callback) {
+  return array.reduce((obj, item) => {
+    let result = callback(item);
+    obj[result] ? (obj[result] = obj[result] + 1) : (obj[result] = 1)
+    return obj
+
+  }, Object.create(null))
+
+}
+
+// Uncomment these to check your work!
+function evenOdd(n) {
+  if (n % 2 === 0) return 'even';
+  else return 'odd';
+}
+const nums = [1, 2, 3, 4, 5];
+console.log(countBy(nums, evenOdd)); // should log: { odd: 3, even: 2 }
