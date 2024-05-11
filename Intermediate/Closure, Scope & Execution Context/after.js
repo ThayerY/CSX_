@@ -5,6 +5,9 @@
  *  the second parameter.
  */
 
+// you tube solution for this ⬇️
+// https://www.youtube.com/watch?v=thmw-aEuQe0&t=429s&ab_channel=Codesmith
+
 // ADD CODE HERE
 const after = (n, cb) => {
   let counter = 0
@@ -13,8 +16,6 @@ const after = (n, cb) => {
     counter++
     if (counter >= n) {
       return cb(...args)
-    } else {
-      return undefined
     }
   }
 }
